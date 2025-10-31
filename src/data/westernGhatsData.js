@@ -1,0 +1,65 @@
+export const westernGhatsData = {
+  name: "Western Ghats, India",
+  description: "A UNESCO World Heritage site, one of the eight 'hottest hotspots' of biological diversity in the world.",
+  story: "This ancient mountain range is older than the Himalayas and acts as a massive water tower for millions of people. Its unique forests are home to species found nowhere else on Earth, but expanding tea and coffee plantations are fragmenting their habitat.",
+  initialState: {
+    biodiversity: 85,
+    co2Level: 30,
+    soilQuality: 75,
+    localEconomy: 60,
+  },
+  variables: {
+    deforestation: {
+      label: "Deforestation Rate",
+      unit: "%",
+      icon: "🪓",
+      min: 0,
+      max: 70,
+      default: 10,
+    },
+    solarFarms: {
+      label: "Solar/Wind Farm Deployment",
+      unit: "%",
+      icon: "☀️",
+      min: 0,
+      max: 50,
+      default: 5,
+    },
+    agriculture: {
+      label: "Agricultural Expansion",
+      unit: "%",
+      icon: "🚜",
+      min: 0,
+      max: 60,
+      default: 25,
+    },
+  },
+  impacts: {
+    deforestation: {
+      biodiversity: -0.8,
+      co2Level: 0.5,
+      soilQuality: -0.6,
+      localEconomy: 0.2,
+    },
+    solarFarms: {
+      biodiversity: -0.1,
+      co2Level: -0.4,
+      soilQuality: 0.0,
+      localEconomy: 0.3,
+    },
+    agriculture: {
+      biodiversity: -0.4,
+      co2Level: 0.1,
+      soilQuality: -0.3,
+      localEconomy: 0.4,
+    },
+  },
+  speciesList: [
+    { name: "Bengal Tiger", icon: "🐅" },
+    { name: "Lion-tailed Macaque", icon: "🐒" },
+    { name: "Malabar Giant Squirrel", icon: "🐿️" },
+    { name: "Purple Frog", icon: "🐸" },
+    { name: "Great Hornbill", icon: "🦅" },
+    { name: "Nilgiri Tahr", icon: "🐐" },
+  ],
+};
